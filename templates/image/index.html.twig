@@ -1,0 +1,13 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Экран 1{% endblock %}
+
+{% block body %}
+    <h1>Веб-приложение для извлечения и отображения изображений с веб-страницы</h1>
+
+    <form action="{{ path('process_url') }}" method="post">
+        <label for="url">Введите URL:</label>
+        <input type="text" name="url" required>
+        <button type="submit">Го</button>
+    </form>
+{% endblock %}
